@@ -1,0 +1,17 @@
+NumIntSeq 				0,755000 seconds step = 100000000
+NumIntSeq 				7,485000 seconds step = 1000000000
+
+NumIntSeqParGet			0,073000 seconds step = 100000000
+NumIntSeqParGet			0,582000 seconds step = 1000000000
+
+NumIntSeqParLock		0,086000 seconds step = 100000000
+NumIntSeqParLock		0,632000 seconds step = 1000000000
+
+NumIntSeqParSync		0,087000 seconds step = 100000000
+NumIntSeqParSync		0,646000 seconds step = 1000000000
+
+NumIntSeqParSyncMistake	2,102000 seconds step = 100000000
+NumIntSeqParSyncMistake	19,040000 seconds step = 1000000000
+
+
+Η NumIntSeqParGet υπολογίζει αρκετά πιο γρήγορα σε σχέση με την NumIntSeq. Από την άλλη πλευρά, οι συναρτήσεις NumIntSeqParLock και NumIntSeqParSync εκτελούνται ελαφρώς πιο αργά σε σύγκριση με την NumIntSeqParGet. Αξίζει να σημειωθεί ότι η συνάρτηση NumIntSeqParSyncMistake είναι ακόμα πιο αργή από τις προαναφερθείσες, συμπεριλαμβανομένης και της ακολουθιακής υλοποίησης.
